@@ -10,7 +10,7 @@
     3 passo:
         ve o meio
 - Amplitude =  MAX(x) - MIN (Y)
-
+- desvio padrão
 
 
 "existem N métricas"
