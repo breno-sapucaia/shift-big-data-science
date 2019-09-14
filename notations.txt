@@ -1,0 +1,56 @@
+- Média (Aritmética)
+- Média (Ponderada)
+- Média (Móbel)
+- Moda ( valor que aparece + vezes )
+- Mediana ( pressupõe a ordenação crecente dos dados e pega oq ta no meio)
+    1 passo:
+        Ordenar crescentemente
+    2 passo:
+        Aplicar operador % e verificar 0  ou 1
+    3 passo:
+        ve o meio
+- Amplitude =  MAX(x) - MIN (Y)
+
+
+
+"existem N métricas"
+
+bayes interpreta a média como
+o valor mais provável de uma 
+variável.
+
+
+
+Média e Mediana uma medidade de tendência central.
+
+A média é tendenciada pelos valores grandes
+A mediana é tendeciosa pelo maior grupo de dados.
+
+
+trabalhamos com amostra de populações sendo elas
+respectivamentes um conjunto de dados idealizados
+e um subconjunto que conta uma história da ota.
+
+
+estatísticas clássicas
+    1 - inferencial
+    -------------------
+    2 - frequentistas - trabalha diretamente
+    3 - bayesiana     - com os dados
+    -------------------
+
+
+população -> amostra
+  - tem que ter média e mediana e desvio padrão aproximadissimas
+                                ( ^^pesquisar sobre)
+
+-- estudar -- teorema de limite central
+16 mil linhas é a média.
+
+-- estudar -- score z
+quantos desvios padrão de distâncias ele está em relação a média.
+|z| > 3 = outliers;
+
+calculo de outliers pode ser usado para detectar anomalias.
+
+
