@@ -67,6 +67,7 @@ hist(d$price)
 
 # Visualizacao de 4 graficos 
 par(mfrow=c(2,2))
+par(mfrow=c(1,1))
 # Comparativo de distribuicao
 hist(d$price)
 hist(a1$price)
@@ -76,3 +77,66 @@ hist(a3$price)
 # Descriao de uma amostra
 summary(d)
 summary(a3)
+
+# Boxplot
+boxplot(d$price)
+boxplot(d$price~d$cut)
+boxplot(d$price~d$color)
+
+#grafico de dispersão = scaterplot
+m <- mtcars
+# mpg = milhas por galão
+plot(m$mpg~m$wt)
+
+#Coef correlação linear
+# (pearson)
+cor(m$mpg, m$wt)
+#r package correaltional graphics
+
+# Excericio
+install.packages("swirl")
+library("swirl")
+rm(list=ls())
+ls()
+swirl()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
