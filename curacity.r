@@ -40,6 +40,6 @@ hist(new_train$Age)
 boxplot(new_train$Age)                        
 lm(new_train$Age~new_train$Survived)
 
-?numeric
+?numeric 
 as.numeric(3.2)
 clear()
