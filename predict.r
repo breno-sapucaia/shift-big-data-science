@@ -10,7 +10,7 @@ m3<-lm(Survived~Pclass + Age + Sex, data=new2_train)
 summary(m3)
 View(new2_train)
 # Previsão dos dados
-p<-predict(m3, newdata=test)
+p<-predict(mod, newdata=test)
 test$Sex <- ifelse(test$Sex == "female",as.numeric(1),as.numeric(0))
 
 # Classificação de Survived, através do gatilho 0.5
