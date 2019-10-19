@@ -25,7 +25,7 @@ plot(mod, type="simple")
 #ML Classificador AD
 d <- read.csv("train.csv")
 # Separação base treino e teste
-set.seed(62)
+set.seed(44)
 va <-sample(nrow(d))
 treino <- d[va[1:691],]
 teste <- d[va[692:891],]
@@ -36,7 +36,7 @@ teste <- d[va[692:891],]
 #mod <- ctree(Survived~Sex+Pclass+Age, data=treino)
 #mod <- ctree(Survived~Sex+Pclass, data=treino)
 #mod <- ctree(Survived~Sex+Pclass+Age+Fare, data=treino)
-mod <- ctree(Survived~Sex+Pclass+Embarked+Sibsp+Parch, data=treino)
+mod <- ctree(as.factor(Survived)~Sex+Pclass+Embarked+Sibsp+Parch, data=treino)
 plot(mod, type="simple")
 #Previsão em teste
 
@@ -46,7 +46,7 @@ cbind(prev,teste$Survived)
 
 # Matriz de confusão
 # cm - A.K.A - Confusion Matrix
-cm <- table(prev, teste$Survived)
+cm <- table(p, teste$Survived)
 Precision <- cm[2,2]/ ( cm[1,2] + cm[2,2])
 Recall <- cm[2,2]/ ( cm[2,1] + cm[2,2])
 accuracy <- (cm[1,1] + cm[2,2] )/ nrow(teste)
